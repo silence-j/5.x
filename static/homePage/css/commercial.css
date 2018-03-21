@@ -1,0 +1,189 @@
+.bg{
+    width: 100%;
+    height: 480px;
+    position: relative;
+}
+.bg img{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.bg p {
+    position: absolute;
+    font-family: SourceHanSerifCN-Heavy;
+    font-size: 48px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    top: 170px;
+    left: 32.5%;
+}
+.bg span {
+    font-family: PingFangSC-Light;
+    font-size: 14px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    position: absolute;
+    top: 252px;
+    left: 38.4%;
+}
+/*图片展示start*/
+.learn {
+    width:100%;
+    text-align: center;
+    padding-top: 80px;
+    background-color: #FFFFFF;
+    overflow: hidden;
+}
+.learn .pic-container {
+    width:75%; 
+    margin-left: 12.5%;
+    overflow: hidden;
+}
+.learn h2 {
+    font-family: HelveticaNeue-Bold;
+    font-size: 36px;
+    color: #2C2B3F;
+    letter-spacing: 0;
+    margin-bottom: 80px;
+}
+.learn  .pic-container li{
+    display: inline-block;
+    width:31%;
+    padding-bottom: 20px;
+    border: 1px solid #ECECEC;
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+.learn .pic-container li:nth-of-type(3n+2) {
+    margin-left: 2.2%;
+    margin-right: 2.2%;
+}
+.learn .pic-container li a{
+    display: inline-block;
+    width:100%;
+
+}
+.learn .pic-container a .photo {
+    display: block;
+    width: 100%;
+    overflow: hidden;
+}
+.learn .pic-container a .photo img{
+    width: 100%;
+     -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -ms-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+
+}
+.learn .pic-container li img:hover{
+    transform: scale(1.2);
+   
+}
+.learn .pic-container li p {
+    margin-top: 10px;
+    margin-bottom: 13px;
+    font-family: PingFang-SC-Semibold;
+    font-size: 16px;
+    color: #333333;
+    letter-spacing: 0;
+    white-space: nowrap;
+    overflow: hidden; 
+    text-overflow: ellipsis;
+    max-width: 100%;
+    
+}
+.learn .pic-container li span {
+    display: inline-block;
+    font-family: PingFangSC-Regular;
+    font-size: 13px;
+    color: #666666;
+    letter-spacing: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%;
+}
+@media (min-width: 1024px){.learn .pic-container ul li:nth-child(3n) {margin-right: 0}}
+@media (max-width: 1024px){.learn .pic-container ul li{width:49%;margin-bottom: 15px}}
+@media (max-width: 1024px){.learn .pic-container ul li:nth-child(2n) {margin-right: 0}}
+/*图片展示end*/
+
+
+/* 视频播放模块start */
+
+.video {
+    width: 100%;
+    background-color: #FFFFFF;
+    padding-top: 80px;
+    padding-bottom: 112px;
+}
+.video .video-container{
+    width:83.5%;
+    margin: 0 auto;
+    text-align: center;
+}
+.video .video-container h2 {
+    font-family: HelveticaNeue-Bold;
+    font-size: 36px;
+    color: #333333;
+    letter-spacing: 0;
+    line-height: 50px;
+}
+.video .video-container p {
+    font-family: PingFangSC-Regular;
+    font-size: 16px;
+    color: #666666;
+    letter-spacing: 0;
+    margin-top: 18px;
+    margin-bottom: 58px;
+}
+.video .video-container ul {
+    margin-bottom: 50px;
+    width: 100%;
+    
+    margin-bottom: 50px;
+    width: 100%;
+    max-width: 1440px;
+    /* margin: 0 auto; */
+    padding: 0 20px;
+    margin-left: 2.6%;
+}
+.video .video-container ul li{
+  float: left;
+  width:32%;
+  height: 360px;
+  margin-right: 2%;
+  margin-bottom: 30px;
+  overflow: hidden;
+}
+.video .video-container ul li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.video .video-container ul li img{
+  width:100%;
+}
+
+.video .video-container .video-operation{
+  clear: both;
+  text-align: center;
+  width:100%;
+  margin-top: 80px;
+}
+.video .video-container .video-operation button{
+  background-image: linear-gradient(-90deg, #78E5D7 0%, #008EDE 100%);
+  box-shadow: 0 0 4px 0 rgba(0,0,0,0.20);
+  border-radius: 4px;
+  width: 16.5%;
+  height: 56px;
+  font-size: 16px;
+  color: #FFFFFF;
+  border: none;
+}
+@media (min-width: 1024px){.video .video-container ul li:nth-child(3n) {margin-right: 0}}
+@media (max-width: 1024px){.video .video-container ul li{width:49%;margin-bottom: 15px}}
+@media (max-width: 1024px){.video .video-container ul li:nth-child(2n) {margin-right: 0}}
+/* 视频播放模块end */

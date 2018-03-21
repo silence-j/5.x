@@ -1,0 +1,69 @@
+.bg  {
+    width: 100%;
+    overflow: hidden;
+}
+.banner {
+    width: 100%;
+}
+.banner img{
+  width: 100%;
+}
+.ydt_price {
+    width: 100%;
+    margin: 0 auto;
+}
+.ydt_price img {
+    width: 100%;
+    height: 100%;
+}
+.line200{
+    width: 100%;
+    height: 200px;
+    background-color: #ffffff;
+}
+.price_bg {
+    width: 100%;
+    position: relative;
+}
+.price_bg img {
+    width: 100%;
+    height: 100%;
+}
+.pic_left {
+position: absolute;
+width: 30.4%;
+bottom: 64.6%;
+z-index: 2;
+left: 11.8%;
+height: 280px;
+}
+.pic_right {
+    position: absolute;
+    width: 30.4%;
+    bottom: 64.6%;
+    z-index: 2;
+    right: 11.8%;
+    height: 280px;
+}
+
+ .pic-operation{
+  clear: both;
+  text-align: center;
+  width:100%;
+  position: absolute;
+  bottom: 20%;
+  left: 45.8%;
+  width: 8.4%
+}
+ .pic-operation .btn{
+  background-image: linear-gradient(-90deg, #78E5D7 0%, #008EDE 100%);
+  box-shadow: 0 0 4px 0 rgba(0,0,0,0.20);
+  border-radius: 4px;
+  width: 100%;
+  height: 56px;
+  line-height: 56px;
+  font-size: 16px;
+  color: #FFFFFF;
+  border: none;
+  display: inline-block;
+}

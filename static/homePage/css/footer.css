@@ -1,0 +1,128 @@
+/* footer star */
+.foot {
+    width: 100%;
+    background-color: #2C2B3F;
+}
+.foot .foot-container {
+    /*max-width: 1440px;*/
+    width: 75%;
+    padding-bottom: 50px;
+    margin-left: 12.5%;
+    box-sizing: border-box;
+    padding-top: 40px;
+    /* overflow: hidden; */
+    display: inline-block;
+    max-width: 1440px;
+}
+
+.foot-container .foot-left{
+    display: inline-block;
+    width: 30%;
+    height: 100%;
+    float: left;
+    font-family: PingFangSC-Light;
+    font-size: 14px;
+    color: #F5F9FC;
+    letter-spacing: 0;
+    margin-right: 29%;
+}
+.foot-left .foot-logo {
+    display: block;
+    width: 180px;
+    margin-bottom: 25px;
+}
+.foot-left .foot-logo img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.foot-left p {
+    margin-bottom: 20px;
+}
+.foot-left .icon span{
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+.foot-left .coordinate span:first-of-type{
+    width: 20px;
+    height: 20px;
+}
+ .QRcode,
+ .foot ul
+ {
+    float: left;
+    height: 100%;
+    margin-right: 2%;
+}
+.QRcode {
+    width: 12%;
+}
+.map , .net {
+    width: 8%;
+}
+.store {
+    width: 7%;
+}
+.QRcode h3 {
+    margin-top: 0px;
+    line-height: 19px;
+}
+.QRcode p {
+    color: #FFFFFF;
+    margin-top: 20px;
+}
+ ul:last-of-type {
+    margin-right: 0;
+}
+ .foot-container ul li {
+    margin-bottom: 10px;
+    font-family: HelveticaNeue;
+    font-size: 14px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    overflow: hidden;
+    padding-left: 5px;
+}
+.QRcode h3 ,
+.navigation li:first-of-type {
+    font-family: PingFangSC-Regular;
+    font-size: 18px;
+    color: #F5F9FC;
+    letter-spacing: 0;
+    margin-bottom: 20px;
+}
+.QRcode h3 {
+    min-width: 150px;
+}
+.navigation li:first-of-type {
+    min-width: 78px;
+}
+.foot-container ul li a  {
+    color: #FFFFFF!important;
+}
+.foot-container ul li  a:hover {
+    color: #008EDE!important;
+}
+.patent {
+    width: 100%;
+    height: 50px;
+    background-color:#181818;
+    text-align: center;
+}
+.patent p {
+    font-family: HelveticaNeue;
+    font-size: 14px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    line-height: 50px;
+}
+@media (max-width: 1280px){.customer-server .icon li {width:100%;margin: 15px auto;}}
+@media (max-width: 1280px){.customer-server .icon li:nth-child(2) {margin: 0}}
+@media (max-width: 1280px){.foot-container .foot-left {width:100%;margin-bottom: 15px;margin: 0 auto; text-align: center;}}
+@media (max-width: 1280px){.foot-container .foot-left .foot-logo{margin: 40px auto;}}
+@media (max-width: 1280px){.foot-container  .QRcode {width: 100%;margin:40px 0 0 0;text-align: center;}}
+@media (max-width: 1280px){.foot-container  ul:nth-last-child(-n+3) {display: none;}}
+@media (min-width:1280px) and (max-width:1450px){.foot-left {width: 30%;margin-right: 23%!important} .QRcode{width: 15%} .map , .net {width: 8%;}.store {width: 7%;}}

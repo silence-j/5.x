@@ -1,0 +1,29 @@
+${name} 邀请你加入盈店通
+--------------------------------------------
+    <div  style="width:  840px;  font-family:  'Arial  Normal',  'Arial';font-weight:  400;font-style:  normal;">
+                <div  style="width:798px;height:  498px;margin:0;padding:0  20px  20px  20px;border:1px  solid  #CBD6E3;font-size:0;background-color:#fff;border-radius:4px;">
+                    <img  src="https://img.onloon.co/20170626181550443033939.png" style="margin:  0  0  0  18px; height: 18px; width: auto;"/>
+                    <div  style="padding:  63px  83px;">
+                        <img  src="https://img.onloon.co/20170626181632797463887.png" style="margin:4px 0 10px -6px;"/>
+            <p style="height:70px;line-height:90px;text-align:left;margin-bottom:0px;border-top:1px solid #EAF0F6;font-size:20px;color:#33475B;font-weight:bold;">Hi ${name}</p>
+            <p style="display:inline-block;line-height:30px;font-size: 13px;color: #33475B;margin:0;"> 
+              欢迎加入盈店通，你的初始密码为     
+            </p>
+            <p style="display:inline-block;margin: 0 0 0 10px;min-width:130px;height: 46px;line-height:46px;text-align:center;background:#EAF0F6;color:#4F6D95;font-size:26px;font-weight:bold;">
+              ${password}
+            </p>
+            <p style="margin:31px 0;line-height:25px;font-size: 13px;color: #33475B;">
+              请点击以下链接登录<br>
+              <a href="${domain}" style="text-decoration:none;color:#5488F9;" target="_blank"><span>${domain}</span></a>
+            </p>
+            <div style="padding: 20px 0;line-height:20px;border-top:1px solid #EAF0F6;font-size: 13px;color: #33475B;">
+              <p style="margin:0;">顺祝商祺！</p>
+              <p style="margin:0;">盈店通</p>
+              <a style="margin:0;text-decoration:none;" href="${domain}" target="_blank">${domain}</a>
+            </div>
+          </div>
+        </div>
+        <div style="margin-top:20px;text-align:center;font-size: 13px;color: #7C98B6;">
+          如有疑问请联系我们 ：0571-56581798
+        </div>
+      </div>

@@ -1,0 +1,20 @@
+.contianer {
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 74px;
+    background-color: #ffffff;
+    padding-left: 10px;
+}
+
+.main {
+    width: 100%;
+    height: 600px;
+}
+.main iframe {
+    width: 40%;
+    height: 600px;
+    margin-left: 30%;
+}
+.center {
+    text-align: center;
+}

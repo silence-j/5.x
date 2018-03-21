@@ -1,0 +1,187 @@
+以下为最基础的样式，个例可在单独vue里覆盖
+1.暂无数据
+<div class="no-data" v-if="products.records &&!products.records.length">
+    <div class="img"></div>
+    <div class="tips">暂无数据文案</div>
+    <router-link ><el-button type="primary">按钮名字</el-button></router-link>
+</div>
+样式在base.less
+
+2.正在加载
+<div v-if="loading" class="loading loading-circle"></div>
+样式在base.less
+
+3.分页
+<el-pagination v-if="products.records && products.records.length && products.totalCount > 10"
+      layout="prev, pager, next, sizes, jumper"
+      :page-sizes="[10, 20, 30, 40]"
+      @size-change="listSizeChange"
+      :page-size="pageSize"
+      :total="products.totalCount"
+      :current-Page="pageIndex"
+       @current-change="pager"></el-pagination>
+
+@import '../../assets/style/page';
+
+4.成功失败的弹框
+
+import DialogBox from '../../components/box/dialogBox'
+
+    <DialogBox :config="oconfig" @sure="confirmOk"></DialogBox>
+配置里可红可蓝
+
+还有自写的弹框里下面的确定取消按钮
+
+      <div class="confirm-btn">
+        <el-button type="primary" class="confirm" @click="groupOk">确定</el-button>
+        <el-button class="close"  @click="groupModel = false">取消</el-button>
+      </div>
+带标题头的一般弹框
+   1-> html
+   <el-dialog title="重置密码" class="dialog-normal">
+      <div slot="footer" class="confirm-btn">
+        <el-button class="confirm" >确定</el-button>
+        <el-button class="close">取消</el-button>
+      </div>
+    </el-dialog>
+  2-> 引入样式
+  @import '../../../assets/style/dialog';
+
+5.返回 和 返回下面的大框架子
+<section class="container-1200">
+    <div class="inner-top">
+      <a href="javascript:;" @click="backToList">
+      <!--<i class="icon-font icon-left"></i>-->
+       <span><img src="../../../src/assets/img/left.png" alt="" class="left-back" /></span>
+      返回产品列表</a>
+    </div>
+     <div class="logistic-container">
+     </div>
+</section>
+
+.inner-top 是返回 需要外部.container-1200配合
+
+没有返回的话 .logistic-container可以独立出来，是个大框架子
+     <div class="logistic-container">
+     </div>
+以上样式都在base.less
+
+6. 按钮
+ 蓝按钮 <el-button  type="primary"  >发货</el-button>
+ 白按钮 <el-button >发货</el-button>
+列表里
+ 蓝按钮 <el-button  type="primary" class="btn-blue" >发货</el-button>
+ 白按钮 <el-button  class="btn-trans" >发货</el-button>
+7.views里新建文件夹（命名小写） 一级文件为二级菜单名字（如 第一个文件叫blog 就是指创意中心-blog.vue）
+  vue文件命名 addBlog 或一个名词（现在是小写多 ，那就小写呗）
+  文件内如果有小组件 （如 blog - cpnts - 放这里）
+  公共组件写在components下
+
+8.富文本编辑器
+  import VueHtml5Editor from 'longxi-vue-html5-editor'
+
+9.莫要写内联样式
+  css内嵌 最多三个
+  css代码规范 http://codeguide.bootcss.com/#css-nesting
+
+10.表单验证
+  -----html
+  <el-form label-width="107px" :rules="rules" ref="form" :model="form">
+          <el-form-item label="邮件推广名称:" prop="title">
+            <el-input :maxlength=100 v-model="form.title"></el-input>
+          </el-form-item>
+          <el-form-item label="邮件标题:" prop="subject">
+            <el-input v-model="form.subject"></el-input>
+          </el-form-item>
+          <el-button type="primary" ><i class="icon-user2"></i>特征词</el-button>
+        </el-form>
+  ---------js
+  export default{
+    name: 'emailMarketAdd',
+    data () {
+      let vblank = (rule, value, callback) => {
+        let rule1 = /^\s+$/
+        if (value === '') {
+          callback()
+        } else if (rule1.test(value)) {
+          if (rule.field === 'title') {
+            callback(new Error('!请输入邮件推广名称'))
+          } else {
+            callback(new Error('!请输入邮件标题'))
+          }
+        } else {
+          callback()
+        }
+      }
+      return {
+        form: {
+          subject: '',
+          subprefix: '',
+          subsuffix: '',
+          title: '',
+          senderName: '',
+          sender: ''
+        },
+        rules: {
+          title: [
+            { required: true, message: '!请输入邮件推广名称', trigger: 'blur' },
+            { validator: vblank, trigger: 'blur' }
+          ],
+          subject: [
+            { required: true, message: '!请输入邮件标题', trigger: 'blur' },
+            { validator: vblank, trigger: 'blur' }
+          ]
+        }
+      }
+    },
+    computed: {
+    },
+    watch: {
+    },
+    mounted () {
+    },
+    created () {
+    },
+    methods: {
+    },
+    components: {
+    }
+  }
+  更多验证 可看product/Modify.vue
+11.列表上的排序
+
+          <el-table-column
+            label="所属分组"
+            prop="cateName"
+            sortable
+            width="191">
+            <template scope="scope">
+            嘻嘻嘻嘻嘻嘻寻
+            </template>
+          </el-table-column>
+    // 样式
+
+  .el-table {
+    .caret-wrapper{
+      height: 10px;
+    }
+    .sort-caret.ascending{
+      top: -1px;
+      border-bottom: 5px solid #B0C1D4
+    }
+    .sort-caret.descending{
+      bottom: -1px;
+      border-top: 5px solid #B0C1D4
+    }
+    .descending .sort-caret.descending{
+      border-top-color: #02AAAA;
+    }
+    .ascending .sort-caret.ascending{
+      border-bottom-color: #02AAAA;
+    }
+  }
+    sortable
+12.elementUI 组件用起来
+   el-table el-button el-tag
+
+

@@ -1,0 +1,508 @@
+body {
+    background-color: #fff;
+}
+.bg{
+    width: 100%;
+    height: 480px;
+    position: relative;
+}
+.bg img{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.bg p {
+    position: absolute;
+    font-family: SourceHanSerifCN-Heavy;
+    font-size: 48px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    top: 170px;
+    left: 18.6%;
+}
+.bg span {
+    font-family: PingFangSC-Light;
+    font-size: 18px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    position: absolute;
+    top: 252px;
+    left: 30.5%;
+}
+.bg .nav {
+    box-sizing: border-box;
+    
+    width: 30.5%;
+    margin-left: 34.7%;
+    height: 63px;
+    position: absolute;
+    bottom: -17px;
+    
+}
+
+.nav li:last-child {
+    margin-right: 0;
+}
+.nav li{
+  width: 31%;
+  margin-right: 0.4%;
+  height: 100%;
+  background-color: #fff;
+  display: inline-block;
+  font-family: 'PingFangSC-Regular';
+  font-size: 14px;
+  color: #333333;
+  letter-spacing: 0;
+  z-index: 2;
+  line-height: 63px;
+  text-align: center;
+  cursor: pointer;
+}
+.line-17 {
+    width: 100%;
+    height: 17px;
+    background-color: #F5F9FC;
+}
+/*客户服务*/
+
+.container {
+    width: 100%;
+}
+
+.customer-server{
+    width: 100%;
+    min-height: 525px;
+    text-align: center;
+    background-color: #F5F9FC;
+    overflow: hidden;
+    position: relative;
+}
+
+.customer-server h2{
+    font-family: 'PingFangSC-Regular';
+    font-size: 24px;
+    color: #333333;
+    letter-spacing: 0;
+    height: 141px;
+    line-height: 141px;
+    background-color: #ffffff;
+}
+.customer-server h2 .line {
+    display: block;
+    margin: -45px auto;
+    width: 45px;
+    height: 0;
+    border-bottom: 2px solid #40BDDA;
+}
+.customer-server .icon {
+    width:100%;
+    margin:0 auto;
+    overflow: hidden;
+    background-color: #F5F9FC;
+    margin-left: 12.5%;
+    padding-top: 36px;
+    padding-bottom: 36px;
+}
+.customer-server .icon li {
+    float: left;
+    width: 23.9%;
+    height: 355px;
+    background-color: #fff;
+    border-radius: 4px;
+}
+ .customer-server .icon li:nth-of-type(2) {
+    margin : 0 1.6%;
+} 
+.customer-server .icon li:hover{
+    box-shadow: 0px 0px 15px #cccccc;
+}
+.customer-server .icon li a{
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    margin-top: 85px;
+}
+.customer-server .icon li h4 {
+    margin-top: 30px;
+    font-size: 16px;
+}
+.customer-server .icon li p {
+    max-width: 205px;
+    display: inline-block;
+    text-align: center;
+    font-size: 13px;
+    color: #666666;
+    margin-top: 20px;
+}
+@media (min-width: 1024px){.customer-server  .icon li:nth-child(3n+1) {margin-right: 0}}
+@media (max-width: 1024px){.customer-server  .icon {width:100%;margin-left: 0}}
+@media (max-width: 1024px){.customer-server  .icon li{width:49%;margin-bottom: 15px;margin-top: 0}}
+@media (max-width: 1024px){.customer-server  .icon li:nth-child(2n) {margin-right: 0;margin-bottom: 15px;}}
+@media (max-width: 1024px){.customer-server  .icon li:last-child(1) {margin-bottom: 0}}
+/* 市场合作 */
+.market-cooperation {
+    background-color: #ffffff;
+    padding-top: 80px;
+    padding-bottom: 100px;
+}
+.market-cooperation .tit {
+    text-align: center;
+}
+.market-cooperation .tit h2 {
+    font-size: 36px;
+    line-height: 44px;
+    margin-bottom: 20px;
+}
+.market-cooperation .tit p {
+    line-height: 25px;
+}
+.address {
+    width: 100%;
+
+}
+.address ul {
+    width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+    padding: 0 12.5%;
+    margin-top: 60px;
+    margin-bottom: 80px;
+} 
+.address ul li {
+    box-sizing: border-box;
+    width: 31.4%;
+    height: 150px;
+    border: 1px solid #D7D7D7;
+    border-radius: 4px;
+    padding: 24px 0 0 24px;
+    float: left;
+    background-color: #F5F9FC;
+    /* margin-right: 2.8%; */
+    margin-bottom: 40px;
+}
+ /*.address ul li:nth-of-type(3n+2) {*/
+    /*margin:0 2.8%;*/
+/*} */
+.address li h4 {
+    font-family: PingFangSC-Regular;
+    font-size: 16px;
+    color: #2C2B3F;
+    letter-spacing: 0;
+    margin-bottom: 13px;
+}
+.address li p {
+    font-family: PingFangSC-Regular;
+    font-size: 12px;
+    color: #70707A;
+    letter-spacing: 0;
+    line-height: 24px;
+}
+.investment {
+    width: 100%;
+    text-align: center;
+}
+.investment h2 {
+    font-family: HelveticaNeue-Bold;
+    font-size: 36px;
+    color: #333333;
+    letter-spacing: 0;
+    margin-bottom: 20px;
+}
+.investment p {
+    font-family: HelveticaNeue;
+    font-size: 16px;
+    color: #333333;
+    letter-spacing: 0;
+    line-height: 26px;
+}
+@media (min-width: 1024px){.address  ul li:nth-child(3n+2) {margin: 0 2.8%}}
+
+@media (max-width: 1024px){.address  ul {width:100%;padding: 0}}
+@media (max-width: 1024px){.address  ul li{width:49%;margin-bottom: 15px;}}
+@media (max-width: 1024px){.address  ul li:nth-child(2n) {margin-left: 2%;margin-bottom: 15px;}}
+@media (max-width: 1024px){.investment  {margin-top: 40px;margin-bottom: 15px;}}
+
+
+.certification {
+    display: none;
+    width: 100%;
+}
+.certification .cer-tit {
+    box-sizing: border-box;
+    background-image: linear-gradient(-90deg, #78E5D7 0%, #008EDE 100%);
+    width: 100%;
+    height: 300px;;
+    text-align: center;
+    padding-top: 75px;
+    padding-bottom: 71px;
+}
+.certification .cer-tit h2 {
+    font-family: 'PingFangSC-Regular';
+    font-size: 36px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+}
+.certification .cer-tit .line {
+    display: block;
+    margin: 20px auto 50px;
+    width: 75px;
+    height: 0;
+    border-bottom: 2px solid #ffffff;
+}
+.certification .cer-tit p {
+    font-family: 'PingFangSC-Regular';
+    font-size: 16px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    line-height: 26px;
+}
+
+.certification .support {
+    box-sizing: border-box;
+    width: 100%;
+    height: 413px;
+    padding-top: 80px;
+    text-align: center;
+}
+.certification .support h2 {
+    font-family: 'PingFangSC-Regular';
+    font-size: 24px;
+    color: #333333;
+    letter-spacing: 0;
+}
+.certification .support .line {
+    display: block;
+    margin: 20px auto 50px;
+    width: 45px;
+    height: 0;
+    border-bottom: 2px solid #40BDDA;
+}
+.support ul {
+    width: 100%;
+}
+.support ul li {
+    display: inline-block;
+    width: 19%;;
+}
+.support ul li img {
+    width: 60px;
+    height: 60px;
+}
+.support ul li .include {
+    width: 100%;
+    height: 52px;
+    border-right: 1px solid #CCD6E2;;
+    margin-top: 30px;
+}
+.support ul li .include:nth-of-type(5) {
+    border-right: none;
+}
+.support ul li .include .suport-tit {
+    font-family: 'PingFangSC-Medium';
+    font-size: 18px;
+    color: #333333;
+    letter-spacing: 0;
+    margin-bottom: 16px;
+
+}
+.support ul li .include .suport-sta { 
+    font-family: 'PingFangSC-Regular';
+    font-size: 14px;
+    color: #333333;
+    letter-spacing: 0;
+}
+.certification .condition {
+    box-sizing: border-box;
+    width: 100%;
+    height: 296px;
+    background-color: #F5F9FC;
+    padding-top: 60px;
+    text-align: center;
+}
+.certification .condition h2 {
+    font-family: 'PingFangSC-Regular';
+    font-size: 24px;
+    color: #333333;
+    letter-spacing: 0;
+}
+.certification .condition .line {
+    display: block;
+    margin: 14px auto 50px;
+    width: 45px;
+    height: 0;
+    border-bottom: 2px solid #40BDDA;
+}
+.certification .condition ul {
+    width: 100%;
+}
+.active {
+    color: #78E5D7!important;
+}
+.certification .condition ul li {
+    display: inline-block;
+    height: 75px;
+    padding: 0 3%;
+}
+.certification .condition ul li img {
+    width: 70px;
+    height: 75px;
+    float: left;
+}
+.certification .condition ul li .condition-sta {
+    display: inline-block;
+    text-align: left;
+    margin-left: 15px;
+    float: left;
+    margin-top: 10px;
+}
+.certification .condition ul li .condition-sta p {
+    font-family: 'PingFangSC-Regular';
+    font-size: 16px;
+    color: #333333;
+    letter-spacing: 0;
+    line-height: 26px;
+}
+
+@media (max-width: 1024px){.certification .condition ul li img   {display: block;margin: 0 auto;}}
+@media (max-width: 1024px){.certification .condition ul li .condition-sta   {text-align: center;}}
+.certification .apply {
+    box-sizing: border-box;
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
+    padding-top: 80px;
+}
+.certification .apply h2 {
+    font-family: 'PingFangSC-Regular';
+    font-size: 24px;
+    color: #333333;
+    letter-spacing: 0;
+}
+.certification .apply .line {
+    display: block;
+    margin: 14px auto 25px;
+    width: 45px;
+    height: 0;
+    border-bottom: 2px solid #40BDDA;
+}
+.certification .apply .formStyle {
+    position: relative;
+    left: 50%;
+    margin-left: -500px;
+    overflow: hidden;
+    width:1000px;
+    color: #2A2A2A;
+}
+.certification .apply .formStyle li{
+    float: left;
+    width: 475px;
+    height: 80px
+}
+.certification .apply .formStyle li.last{
+    width: 975px;
+    height: 200px;
+}
+.certification .apply .formStyle li.last textarea{
+    width: 877px;
+}
+.certification .apply .formStyle li span {
+    color: red;
+    float: right;
+    margin-top: 10px;
+}
+.certification .apply .formStyle li i {
+    float: right;
+    margin-top: 10px;
+}
+.certification .apply .formStyle li .error{
+    float: left;
+    font-weight: 100;
+    margin-left: 75px;
+    margin-top: 5px;
+    padding-left: 18px;
+    color: red;
+    background: url(../image/errorTips.png) no-repeat;
+    background-size: 17px 17px;
+    display: none;
+}
+.certification .apply .formStyle li textarea {
+    padding: 11px;
+    float: right;
+}
+.certification .apply .formStyle li input {
+    border: none;
+    float: right;
+    border: 1px solid #D8D8D8;
+    padding: 0 10px;
+    width: 380px;
+    height: 40px;
+}
+.certification .apply .formStyle li input.borderStyle{
+    border-color: red
+}
+.certification .apply .formStyle li input.textarea {
+    width: 880px;
+    height: 150px;
+}
+.certification .apply .formStyle li.first{
+    margin-right: 25px;
+}
+.certification .apply .formStyle button{
+    border: none;
+    background-image:linear-gradient(-90deg, #78E5D7 0%, #008EDE 100%);
+    color: #fff;
+    width: 120px;
+    height: 45px;
+    border-radius: 4px;
+    font-size: 16px;
+    margin-bottom: 50px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.certification .apply .formStyle .infor {
+    width: 100%;
+    overflow: hidden;
+    font-size: 16px;
+    color: #666666;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.certification .apply .formStyle .infor p {
+    display: inline-block;
+}
+.certification .apply p {
+    font-family: 'PingFangSC-Regular';
+    font-size: 16px;
+    color: #333333;
+    letter-spacing: 0;
+    line-height: 26px;
+}
+
+ .container .patner {
+    width: 100%;
+    height: 410px;
+    box-sizing: border-box;
+    padding-top: 67px;
+    text-align: center;
+    display: none;
+}
+ .container .patner h2 {
+     font-family: 'PingFangSC-Regular';
+    font-size: 24px;
+    color: #333333;
+    letter-spacing: 0;
+ }
+.container .patner .line {
+    display: block;
+    margin: 14px auto 25px;
+    width: 45px;
+    height: 0;
+    border-bottom: 2px solid #40BDDA;
+}
+.container .patner p {
+    font-family: 'PingFangSC-Regular';
+    font-size: 16px;
+    color: #333333;
+    letter-spacing: 0;
+    line-height: 26px;
+}

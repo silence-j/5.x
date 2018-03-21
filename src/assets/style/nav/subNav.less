@@ -1,0 +1,83 @@
+/**
+ * 二级菜单样式
+ */
+@item-height: 60px;
+@bg-topMenu: #fff;
+@c-toptitle: #33475B;
+@fontsize13:13px;
+@fontsize14:14px;
+@fontsize16:16px;
+@c-border:#dfe3eb;
+@c-border1:#cbd6e3;
+@c-title:#7C98B6;
+
+@c-ft-green:#00B8CC;
+@c-ft-red:#F86563;
+@c-ft-blue:#5488F9;
+
+@margintop10:10px;
+@c-bg-blue:#5488F9;
+@bg-L-blue:#F5F8FA;
+.topMenu{
+  width:1200px;
+  margin:0 auto;
+  border-bottom:1px solid @c-border;
+  margin-bottom:16px;
+  .top-title{
+    font-size:20px;
+    color:@c-toptitle;
+    margin-top:20px;
+  }
+  .menu{
+    a{
+      margin-left:2%;
+    }
+    li{
+      display: inline-block;
+      font-size:14px;
+      padding:16px 0 10px 0;
+      line-height: 18px;
+      position: relative;
+      cursor: pointer;
+      color:@c-title;
+      .icon-active {
+        display: none;
+      }
+      .beta{
+        background: #FF3B6E;
+        box-shadow: 0 2px 4px 0 rgba(0,0,0,0.10);
+        border-radius: 2px;
+        font-size: 9px;
+        color: #FFFFFF;
+        padding:0px 2px;
+        display: inline-block;
+        position: absolute;
+        top: 6px;
+        right: -20px;
+      }
+    }
+    li:hover{
+      color:#5488F9;
+    }
+    a:first-child{
+      margin-left:0;
+    }
+    .icon, [class^="icon"]{
+      margin-right:5px;
+    }
+    .curr{
+      border-bottom: 4px solid @c-bg-blue;
+      color: @c-bg-blue;
+      .icon-unactive {
+        display: none;
+      }
+      .icon-active {
+        display: inline-block;
+      }
+    }
+  }
+}
+.router-view{
+  width:1200px;
+  margin:0 auto;
+}
